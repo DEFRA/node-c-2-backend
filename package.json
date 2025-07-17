@@ -1,7 +1,7 @@
 {
-  "name": "cdp-node-backend-template",
-  "version": "0.1.0",
-  "description": "CDP Node.js Backend Template",
+  "name": "node-c-2-backend",
+  "version": "0.0.0",
+  "description": "node-c-2-backend",
   "main": "src/index.js",
   "type": "module",
   "engines": {
