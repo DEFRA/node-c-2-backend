@@ -1,4 +1,4 @@
-
+import { userRoutes } from "./endpoints/user.js"
 
 const hapiHelloRoute = [
 
@@ -16,6 +16,6 @@ export const fundingRouter = {
     name: 'funding-api',
     version: '1.0.0',
     async register(server) {
-        server.route(hapiHelloRoute)
+        server.route([...hapiHelloRoute, ...userRoutes])
     }
 }

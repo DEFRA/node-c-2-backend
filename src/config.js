@@ -99,6 +99,28 @@ const config = convict({
       default: 'x-cdp-request-id',
       env: 'TRACING_HEADER'
     }
+  },
+
+  postgres: {
+    
+    user: {
+      doc: 'Postgres user',
+      format: String,
+      default: 'postgres',
+      env: 'POSTGRES_USER'
+    },
+    password: {
+      doc: 'Postgres password',
+      format: String,
+      default: 'password',
+      env: 'POSTGRES_PASSWORD'
+    },
+    database: {
+      doc: 'Postgres database',
+      format: String,
+      default: 'postgres',
+      env: 'POSTGRES_DB'
+    }
   }
 })
 
